@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Hero } from '../hero';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
@@ -20,6 +20,18 @@ export class HeroDetailComponent {
 
   ngOnInit(): void {
     this.getHero();
+  }
+
+  increment(): void {
+    if (this.hero?.health != null) {
+      this.hero.health++
+    }
+  }
+
+  decrement(): void {
+    if (this.hero?.health != null) {
+      this.hero.health--
+    }
   }
 
   getHero(): void {
