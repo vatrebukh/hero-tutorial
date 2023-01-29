@@ -1,0 +1,13 @@
+label {
+  color: #435960;
+  font-weight: bold;
+}
+.line {
+  padding: 0 0 0.4em 0;
+  line-height: 1em;
+  text-align: left;
+  margin-right: .8em;
+}
+.head {
+  /*background-color: #409091;*/
+}
