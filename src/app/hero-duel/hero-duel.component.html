@@ -1,2 +1,8 @@
-<div class="badge bl"><app-hero-fighter [hero]="myHero"></app-hero-fighter></div>
-<div class="badge br"><app-hero-fighter [hero]="otherHero"></app-hero-fighter></div>
+<div class="duel-wrapper">
+  <div class="badge bl"><app-hero-fighter [hero]="myHero"></app-hero-fighter></div>
+  <div class="badge log"><app-fight-log></app-fight-log></div>
+  <div class="badge br"><app-hero-fighter [hero]="otherHero"></app-hero-fighter></div>
+</div>
+<div class="duel-controls">
+  <button type="button" class="clear" (click)="fight()" [disabled]="inactiveHero.health == 0">{{activeHero.name}} attacks</button>
+</div>

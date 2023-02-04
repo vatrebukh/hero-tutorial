@@ -11,6 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { HeroDuelComponent } from './hero-duel/hero-duel.component';
 import { HeroFighterComponent } from './hero-fighter/hero-fighter.component';
+import { FightLogComponent } from './fight-log/fight-log.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HeroFighterComponent } from './hero-fighter/hero-fighter.component';
     DashboardComponent,
     HeroSearchComponent,
     HeroDuelComponent,
-    HeroFighterComponent
+    HeroFighterComponent,
+    FightLogComponent
   ],
   imports: [
     BrowserModule,

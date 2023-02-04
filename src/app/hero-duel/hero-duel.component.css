@@ -1,11 +1,10 @@
 .badge {
   display: inline-block;
   padding: 0;
-  background-color: #40b0b1;
+  background-color: #5fe7e8;
   line-height: 1em;
   min-width: 320px;
   text-align: right;
-  margin-right: .8em;
   margin-top: .8em;
   border-radius: 4px 0 0 4px;
 }
@@ -16,4 +15,21 @@
 
 .br {
   border-radius: 0 8px 8px 0;
+}
+
+.log {
+  display: inline-block;
+  min-width: 300px;
+  vertical-align: top;
+  background-color: #fff9aa;
+  text-align: center;
+}
+
+.duel-wrapper {
+  display:flex;
+}
+
+.duel-controls {
+  align-content: center;
+  width: 100%;
 }
