@@ -3,11 +3,12 @@ label {
   font-weight: bold;
 }
 .line {
-  padding: 0 0 0.4em 0;
+  padding: .4em .8em;
   line-height: 1em;
   text-align: left;
-  margin-right: .8em;
 }
 .head {
-  /*background-color: #409091;*/
+  background-color: #409091;
+  font-weight: bold;
+  font-size: large;
 }

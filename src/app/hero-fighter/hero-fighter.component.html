@@ -1,10 +1,18 @@
 <div *ngIf="hero">
   <div class="line head">
-    <label for="hero-name">Hero name: </label>
+<!--    <label for="hero-name">Hero name: </label>-->
     <span id="hero-name">{{hero.name}}</span>
   </div>
   <div class="line">
     <label for="hero-health">Health: </label>
     <span id="hero-health">{{hero.health}}</span>
+  </div>
+  <div class="line">
+    <label for="hero-attack">Attack: </label>
+    <span id="hero-attack">{{hero.attack}}</span>
+  </div>
+  <div class="line">
+    <label for="hero-speed">Speed: </label>
+    <span id="hero-speed">{{hero.speed}}</span>
   </div>
 </div>

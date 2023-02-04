@@ -22,15 +22,27 @@ export class HeroDetailComponent {
     this.getHero();
   }
 
-  increment(): void {
-    if (this.hero?.health != null) {
-      this.hero.health++
-    }
+  increment(prop: String): void {
+    this.changeValue(prop, 1)
   }
 
-  decrement(): void {
-    if (this.hero?.health != null) {
-      this.hero.health--
+  decrement(prop: String): void {
+    this.changeValue(prop, -1)
+  }
+
+  changeValue(prop: String, delta: number) {
+    if (this.hero != null) {
+      switch (prop) {
+        case "health":
+          this.hero.health += delta
+          break;
+        case "attack":
+          this.hero.attack += delta
+          break;
+        case "speed":
+          this.hero.speed += delta
+          break;
+      }
     }
   }
 

@@ -1,5 +1,7 @@
 export interface Hero {
   id: number;
   name: string;
-  health: number | null;
+  health: number;
+  attack: number;
+  speed: number;
 }

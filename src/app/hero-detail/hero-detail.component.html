@@ -5,9 +5,21 @@
   </div>
   <div>
     <label>Health: </label>
-    <button class="minus-button" type="button" (click)="decrement()">-</button>
+    <button class="minus-button" type="button" (click)="decrement('health')" [disabled]="hero.health <= 1">-</button>
     {{hero.health}}
-    <button class="plus-button" type="button" (click)="increment()">+</button>
+    <button class="plus-button" type="button" (click)="increment('health')" [disabled]="hero.health >= 150">+</button>
+  </div>
+  <div>
+    <label>Attack: </label>
+    <button class="minus-button" type="button" (click)="decrement('attack')" [disabled]="hero.attack <= 1">-</button>
+    {{hero.attack}}
+    <button class="plus-button" type="button" (click)="increment('attack')" [disabled]="hero.attack >= 10">+</button>
+  </div>
+  <div>
+    <label>Speed: </label>
+    <button class="minus-button" type="button" (click)="decrement('speed')" [disabled]="hero.speed <= 1">-</button>
+    {{hero.speed}}
+    <button class="plus-button" type="button" (click)="increment('speed')" [disabled]="hero.speed >= 5">+</button>
   </div>
 </div>
 <button type="button" (click)="goBack()">go back</button>
